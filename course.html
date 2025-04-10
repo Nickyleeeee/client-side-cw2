@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses - Ulster University</title>
+    <link rel="stylesheet" href="./styles/coursestyle.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="Images/Ulster universty logo.png"
+        alt="Ulster University"
+        id="logo"
+      />
+      <button id="menu-toggle">&#9776;</button>
+      <!-- Hamburger Menu -->
+      <nav id="nav-links">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html#achivements">Achievements</a></li>
+          <li><a href="./courses.html">Courses</a></li>
+          <li><a href="./index.html#student-life">Student Life</a></li>
+          <li><a href="./index.html#research">Research</a></li>
+          <li><a href="./index.html#alumni">Alumni</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Courses Section -->
+      <section id="courses" class="courses">
+        <img src="Images/courses.jpg" alt="CoursesImg" class="coursesImg" />
+
+        <div class="coursesText">
+          <h1 class="coursesTitle">What We Offer</h1>
+          <p class="coursesDescription">
+            We are committed to providing a high-quality education that prepares
+            our students for success in their careers and lives.
+          </p>
+          <p>Explore our range of courses designed to help you succeed:</p>
+          <input type="text" id="courseSearch" placeholder="Search courses..." />
+          <ul class="course-list">
+            <li>
+              <a href="#" class="course-link" data-course="science"
+                ><strong>Science and Technology</strong></a
+              >
+            </li>
+            <li>
+              <a href="#" class="course-link" data-course="math"
+                ><strong>Mathematics</strong></a
+              >
+            </li>
+            <li>
+              <a href="#" class="course-link" data-course="business"
+                ><strong>Business and Management</strong></a
+              >
+            </li>
+            <li>
+              <a href="#" class="course-link" data-course="health"
+                ><strong>Health and Social Care</strong></a
+              >
+            </li>
+            <li>
+              <a href="#" class="course-link" data-course="engineering"
+                ><strong>Engineering</strong></a
+              >
+            </li>
+            <li>
+              <a href="#" class="course-link" data-course="education"
+                ><strong>Education</strong></a
+              >
+            </li>
+            <li>
+              <a href="#" class="course-link" data-course="law"
+                ><strong>Law</strong></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Modal Structure -->
+      <div id="courseModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 id="modalTitle"></h2>
+          <p id="modalDescription"></p>
+          <p id="modalDuration"></p>
+          <p id="modalCareers"></p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <h1 class="contact-title">Contact Us</h1>
+        <p class="contact-description">
+          For any inquiries, please email us at
+          <a href="mailto:info@ourschool.edu" class="contact-email"
+            >info@Ulster University.edu</a
+          >
+          or call (123) 456-7890.
+        </p>
+      </section>
+      <p>&copy; 2025 Ulster University. All rights reserved.</p>
+    </footer>
+
+    <script src="./javaScript/courseScript.js"></script>
+  </body>
+</html>

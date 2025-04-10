@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply</title>
+    <link rel="stylesheet" href="./styles/formstyle.css" />
+  </head>
+  <body>
+    <header>
+      <img
+      src="Images/Ulster universty logo.png"
+      alt="Ulster University"
+      id="logo"
+      />
+      <button id="menu-toggle">&#9776;</button> <!-- Hamburger Menu -->
+      <nav id="nav-links">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html#achievements">Achievements</a></li>
+          <li><a href="./course.html">Courses</a></li>
+          <li><a href="./index.html#student-life">Student Life</a></li>
+          <li><a href="./index.html#research">Research</a></li>
+          <li><a href="./index.html#alumni">Alumni</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="success-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Application Submitted!</h2>
+        <p>Your application has been received successfully. We will get back to you soon.</p>
+      </div>
+    </div>
+    
+    <section id="apply">
+      <form id="applicationForm" class="apply-form" novalidate>
+        <div>
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+          <span class="error" id="nameError"></span>
+        </div>
+
+        <div>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+          <span class="error" id="emailError"></span>
+        </div>
+
+        <div>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+          <span class="error" id="phoneError"></span>
+        </div>
+
+        <div>
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+          <span class="error" id="dobError"></span>
+        </div>
+
+        <div>
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required />
+          <span class="error" id="addressError"></span>
+        </div>
+
+        <div>
+          <label for="courseSelect">Select Course:</label>
+          <select id="courseSelect" name="courseSelect" required>
+            <option value="">--Choose a course--</option>
+            <option value="science">Science and Technology</option>
+            <option value="math">Mathematics</option>
+            <option value="languages">Languages</option>
+            <option value="arts">Arts and Humanities</option>
+          </select>
+          <span class="error" id="courseError"></span>
+        </div>
+
+        <div>
+          <label for="statement">Why do you want to study this course?</label>
+          <textarea
+            id="statement"
+            name="statement"
+            rows="4"
+            required
+          ></textarea>
+          <span class="error" id="statementError"></span>
+        </div>
+
+        <div>
+          <label for="documents">Upload Supporting Documents:</label>
+          <input type="file" id="documents" name="documents" required />
+          <span class="error" id="documentsError"></span>
+        </div>
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+      <h1 class="contact-title">Contact Us</h1>
+        <p class="contact-description">
+          For any inquiries, please email us at
+          <a href="mailto:info@ourschool.edu" class="contact-email">info@Ulster University.edu</a> or call
+          (123) 456-7890.
+        </p>
+      </section>
+      <p>&copy; 2025 Ulster University. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./javaScript/formScript.js"></script>
+  </body>
+</html>

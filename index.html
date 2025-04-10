@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ulster University - Educational Website</title>
+    <link rel="stylesheet" href="./styles/indexstyle.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="Images/Ulster universty logo.png"
+        alt="Ulster University"
+        id="logo"
+      />
+      <button id="menu-toggle">&#9776;</button>
+      <!-- Hamburger Menu -->
+      <nav id="nav-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="./course.html">Courses</a></li>
+          <li><a href="#student-life">Student Life</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#alumni">Alumni</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home Section -->
+      <section id="home" class="hero">
+        <img
+          src="Images/HeroBackground.jpg"
+          alt="home image"
+          class="heroImage"
+        />
+
+        <div class="heroText">
+          <h1 class="heroTitle">Welcome to Ulster University</h1>
+          <p class="heroDescription">
+            Start your journey at Ulster. We have a variety of undergraduate and
+            postgraduate programmes available for a September 2025 start.
+          </p>
+          <button type="button" class="heroButton">Apply Now</button>
+        </div>
+      </section>
+
+      <!-- Achievements Section -->
+      <section id="achievements" class="achievements">
+        <div class="achievementsText">
+          <h1 class="achievementsTitle">Our Achievements</h1>
+          <p class="achievementsDescription">
+            At Ulster University, we take pride in our accomplishments. Our
+            school has been recognized for excellence. We have earned numerous
+            awards and our alumni continue to make us proud. below are some of
+            our notable achievements:
+          </p>
+          <ul>
+            <li>Top 10 University in the UK</li>
+            <li>Best Research Facility Award 2024</li>
+            <li>Outstanding Student Satisfaction 2023</li>
+            <li>Innovative Teaching Methods Award 2025</li>
+          </ul>
+        </div>
+
+        <img
+          src="Images/Achievements.jpg"
+          alt="AchievementsImg"
+          class="achievementsImg"
+        />
+      </section>
+
+      <!-- Research & Innovation Section -->
+      <section id="research" class="research">
+        <img
+          src="Images/Research.jpg"
+          alt="Research activities at Ulster"
+          class="research-image"
+        />
+        <div class="research-text">
+          <h1 class="research-title">Research & Innovation</h1>
+          <p class="research-description">
+            Ulster University is a leader in research and innovation. Our recent
+            projects include AI development, sustainable energy solutions, and
+            medical advancements.
+          </p>
+        </div>
+      </section>
+
+      <!-- Student Life Section -->
+      <section id="student-life" class="student-life">
+        <div class="student-life-text">
+          <h1 class="student-life-title">Student Life</h1>
+          <p class="student-life-description">
+            Join a vibrant student community with access to modern sports
+            facilities, clubs, and student organizations.
+          </p>
+        </div>
+        <img
+          src="Images/studentlLife.jpg"
+          alt="Students enjoying campus life"
+          class="student-life-image"
+        />
+      </section>
+
+      <!-- Alumni Section -->
+      <section id="alumni" class="alumni">
+        <h1 class="alumni-title">Alumni Success Stories</h1>
+        <p class="alumni-description">
+          Our graduates have gone on to work at top global companies and start
+          their own successful ventures.
+        </p>
+        <ul class="alumni-list">
+          <li class="alumni-item">
+            <img src="Images/Dr jane doe.jpg" class="jane-doe" /><b
+              >Dr. Jane Doe</b
+            >
+            AI Researcher at Google
+          </li>
+          <li class="alumni-item">
+            <img src="Images/John Smith.jpg" class="john-smith" /><b
+              >John Smith</b
+            >
+            Founder of TechStart
+          </li>
+          <li class="alumni-item">
+            <img src="Images/lisa-wong.webp" class="lisa-wong" /><b
+              >Lisa Wong</b
+            >
+            CEO of GreenEnergy Ltd.
+          </li>
+        </ul>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3 class="faq-question">What courses do you offer?</h3>
+          <p class="faq-answer">
+            We offer various courses, including Science, Business, Law, and
+            more.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">How do I apply?</h3>
+          <p class="faq-answer">
+            Click on the "Apply Now" button, fill out the application form, and
+            submit.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Do you offer scholarships?</h3>
+          <p class="faq-answer">
+            Yes! We have multiple scholarship opportunities for outstanding
+            students.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <h1 class="contact-title">Contact Us</h1>
+        <p class="contact-description">
+          For any inquiries, please email us at
+          <a href="mailto:info@ourschool.edu" class="contact-email"
+            >info@Ulster University.edu</a
+          >
+          or call (123) 456-7890.
+        </p>
+      </section>
+      <p>&copy; 2025 Ulster University. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./javaScript/indexScript.js"></script>
+  </body>
+</html>
