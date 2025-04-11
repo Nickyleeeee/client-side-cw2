@@ -4,4 +4,4 @@
 2. ## Tusy
    Complete Slider
 
-   ##
+   ## Tusy check the LocalStorage
